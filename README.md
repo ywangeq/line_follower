@@ -1,12 +1,12 @@
 # line_follower
 
-#Line follower with feedback control
+## Line follower with feedback control
 ###Purpose
 >The purpose of this lab is to create a behavior that will enable your
 robot car to follow a line with different color which you set using single
 camera in a PID control loop.
 
-###Lab Objectives
+### Lab Objectives
 By following the directions in this lab, you are expected to achieve
 the following:
  
@@ -17,12 +17,12 @@ achieve the best performance
  - Fine tune the control so that the robot can successfully follow a
 line as described in the lab
 
-###Required Equipment
+### Required Equipment
 1. Jetson robot platform
 2. Ros environment
 3. Opencv2.4.13
 
-###Programming
+### Programming
 >1.Using blurs, threshold, canny edge detection and hough lines
 transform to help vision find the line.
 <p>2. Calculates the center of mass. For estimating the deviation of
@@ -35,7 +35,7 @@ of the center of mass. There are two cases that we should consider : when the li
 <p> Then consider the requirements for PID - the current error, integral of error, and derivatie of error. Update the "**integral_error**" value by adding the current error. Now set the angular velocity:
 <p> vel_msg.angular.z=-(Kp*cur_error+Kd*derivative_error+Ki*integral_error);
 
-###Steps
+### Steps
 >To perform this lab, you will need to get the lab_line_follower template into your catkin workspace.
 
 - git clone https://git.ram-lab.com/wangyuan/line_follower.git
@@ -50,5 +50,5 @@ of the center of mass. There are two cases that we should consider : when the li
 
 - roslaunch lab7_line_follower lab7.launch
 
-###ros topic show
+### ros topic show
 - rostopic list
