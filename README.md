@@ -1,7 +1,5 @@
-# line_follower
-
-## Line follower with feedback control
-###Purpose
+# Line follower with feedback control
+### Purpose
 >The purpose of this lab is to create a behavior that will enable your
 robot car to follow a line with different color which you set using single
 camera in a PID control loop.
@@ -9,7 +7,7 @@ camera in a PID control loop.
 ### Lab Objectives
 By following the directions in this lab, you are expected to achieve
 the following:
- 
+
  - Implement a feedback controlled servo behavior for line-following
  in a behavior-based control structured program.
  - Experiment with implementing PID control and tune the gains to
@@ -36,19 +34,26 @@ of the center of mass. There are two cases that we should consider : when the li
 <p> vel_msg.angular.z=-(Kp*cur_error+Kd*derivative_error+Ki*integral_error);
 
 ### Steps
->To perform this lab, you will need to get the lab_line_follower template into your catkin workspace.
+>To perform this lab, you will need to get the lab_line_follower template into your catkin workspace "**catkin_ws/src**"
+- <p> first you need to open the terminal by ctrl+alt+t.
+- <p> to get into the catkin workspace ,run the command:  
+   `cd ~/catkin_ws/src `
+- <p> `git clone https://git.ram-lab.com/wangyuan/line_follower.git`
 
-- git clone https://git.ram-lab.com/wangyuan/line_follower.git
+>To build the code, use the following command when you are in "**workspace**"
 
->To build the code, use the following command when you are in
+- `cd ~/catkin_ws/`
 
-- `~/catkin_ws/`:
+>and then run the next command line to build the source code
 
-- catkin_make
+- `catkin_make`
 
-> To run the system, execute the following
+> After the build, you can run the system by executing the following command
 
-- roslaunch lab7_line_follower lab7.launch
+- `roslaunch lab7_line_follower lab7.launch`
 
 ### ros topic show
-- rostopic list
+> to see the topics which you have published, you can run next command line in the terminal
+- `rostopic list`
+> you can get the information which is published in by this command
+- `rostopic echo /xxx/xxx`
