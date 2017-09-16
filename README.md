@@ -38,7 +38,7 @@ of the center of mass. There are two cases that we should consider : when the li
 - <p> first you need to open the terminal by ctrl+alt+t.
 - <p> to get into the catkin workspace ,run the command:  
    `cd ~/catkin_ws/src `
-- <p> `git clone https://git.ram-lab.com/wangyuan/line_follower.git`
+- <p> `git clone https://github.com/ywangeq/line_follower.git`
 
 >To build the code, use the following command when you are in "**workspace**"
 
